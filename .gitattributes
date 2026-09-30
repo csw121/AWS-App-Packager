@@ -1,0 +1,3 @@
+# Reviewed sample/template fingerprints use exact file bytes.
+# Preserve those bytes on clone, regardless of core.autocrlf on each computer.
+* -text

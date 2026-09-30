@@ -1,0 +1,15 @@
+# DOCUMENTATION VALUES ONLY. Use a separate reviewed inputs.auto.tfvars file.
+# Keep the generated terraform.tfvars.json tested port/preset/environment unchanged.
+# Changing runtime settings requires another local test/export.
+# Fill the required fields after registry apply -> manual image push -> digest lookup.
+availability_zones = ["ap-northeast-2a", "ap-northeast-2c"]
+image_uri = "123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/example@sha256:REPLACE_WITH_ACTUAL_MANIFEST_DIGEST"
+allowed_cidrs = ["203.0.113.10/32"] # Documentation address: replace with reviewed client ranges.
+exposure_mode = "https_existing_certificate"
+certificate_arn = "arn:aws:acm:ap-northeast-2:123456789012:certificate/REPLACE"
+domain_name = "app.example.com" # Must match the real certificate; configure DNS manually.
+create_execution_role = true
+# For a reviewed existing role, set false and supply its actual ARN:
+# existing_execution_role_arn = "arn:aws:iam::123456789012:role/ReviewedExecutionRole"
+# HTTP 실습용 / 실서비스 보안 미구현: explicitly change exposure_mode to "http_demo",
+# remove certificate/domain settings, retain restricted client CIDRs. No user data/secrets.

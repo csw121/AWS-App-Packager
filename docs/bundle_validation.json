@@ -1,0 +1,318 @@
+{
+  "started_at": "2026-09-30T01:34:38.673617+00:00",
+  "validation_workspace": ".work/bundle-validation/e5c37647eb8c4840a503b9280d5e3e60",
+  "scope": "two exact original generated success ZIPs, extracted without source changes",
+  "aws_status": "AWS_NOT_TESTED",
+  "plan_apply_destroy_test": "NOT_RUN",
+  "credential_policy": "ProcessRunner whitelist; fresh HOME/USERPROFILE; metadata disabled",
+  "provider_version": "6.14.0",
+  "provider_h1": "h1:j08+AhqbMSg7/I4mMJCLB/uNJAcd85dNKLTxJ3z8rHo=",
+  "provider_files_sha256": {
+    "LICENSE.txt": "4e2bb185ebd706f76329206869ccb348b92b6236100cfb07775fe31530dab0d5",
+    "terraform-provider-aws_v6.14.0_x5.exe": "8724e27cd2d248dcbf1c0a09ab4ea40918ea18379ef02b73bc1b95c0ea4e58cc"
+  },
+  "provider_source": ".work/template-validation/f8e7e5a1b128423fa20c0a34c866ce11/registry/.terraform/providers",
+  "provider_provenance": "Previously installed signed by HashiCorp; h1 checked against prior lock",
+  "provider_installation": "filesystem mirror only; no direct registry or network mirror",
+  "version_step": {
+    "returncode": 0,
+    "output": "{\n  \"terraform_version\": \"1.14.8\",\n  \"platform\": \"windows_amd64\",\n  \"provider_selections\": {},\n  \"terraform_outdated\": false\n}\n"
+  },
+  "bundles": [
+    {
+      "label": "java-medium",
+      "source_zip": "exports/spring-http-1cfcb09e414d45fbb92fffef51e8047a-fe353915.zip",
+      "source_zip_sha256_before": "af5caac58afae2e623721dbc7daf32ffb25aef3517b8b8a9110a66829e3b5c49",
+      "extracted_directory": ".work/bundle-validation/e5c37647eb8c4840a503b9280d5e3e60/java-medium",
+      "manifest_sha256": "fb6334e78666055323e365e64e79cca76da46d4d039cd0e1a1ade16687997876",
+      "original_files_sha256": {
+        "AWS_SPEC.md": "88cc369f6ea7a01eaf364ce50078d17f7a6b7bd8f0e1cfa89914f505547e3bf7",
+        "AWS_VERIFICATION_RECORD.md": "cf332b88b13579a2f0d0c0bc1282c887e45aac86e3466a6353daec18ea3940fc",
+        "deployment-spec.json": "2b0fdbd17ea53505cc53bb1d1bc4d2755d674348cc8d0004e43b094b043ccc9b",
+        "local-test-result.json": "aa8762c17da1d753f46310c265997a4eefabc1785199036b672c81b4343decf1",
+        "LOCAL_TEST_RESULT.md": "5502eedecc26f0bcbc49a6c443e70f0be3d4015f1444f68979f858131dda69ef",
+        "manifest.json": "fb6334e78666055323e365e64e79cca76da46d4d039cd0e1a1ade16687997876",
+        "MANUAL_AWS_RUNBOOK.md": "4eec48210c9d0422cefe14b546b6651b89364c1fa9e8886483bce470d01a55e6",
+        "README_FIRST.md": "6997ee7bc5c720580c7407edc4c9c0fdd11b16349e149f44b5eabe8268362fc4",
+        "REQUIRED_INPUTS.md": "80d237b39c22d334a578f04a195aa909033a57b69e821b22c4114f3ef6bbd4ba",
+        "image/image.json": "5aef908cb37ea98e27ee436daa8835106ccffb51f167deced281d7026d8bd817",
+        "terraform/registry/main.tf": "d9fe46331e5103f8c3745bbd47e9438099fdd57ca0b28b6a65a0eb1a17097978",
+        "terraform/registry/outputs.tf": "84d57c124108a80180e0d54351359a5715945eac05c8465396307be397958221",
+        "terraform/registry/terraform.tfvars.example": "b2fc3b1dff9d22a7c04772f7e83bfaad70422cf5a4a5e978e4dc483a7013ab13",
+        "terraform/registry/terraform.tfvars.json": "bf17be7fdd214a4f2380219bf6165c2e91fc27b445b83c8a8c4c0d012fc3ea68",
+        "terraform/registry/variables.tf": "aed6a9a15dde8fe0e547bb18f6f4deb27baab282ea29cc30d42681aa0978d8ba",
+        "terraform/registry/versions.tf": "8c2da4ed241576193e080a2f736a60a35d0e8062f107274f63326f6b5afa87a6",
+        "terraform/service/main.tf": "49de83cbad1f3912ceb7e6e56c17dd45fe24cc8cbb010c2a0168f91f2257aa8c",
+        "terraform/service/outputs.tf": "04ec7c40cf22f837db73aa0b693f085fb99fd70eac0d811b5d4c7d84bd6f14e5",
+        "terraform/service/presets.json": "e57d8e157c453ccfb25860baa39f2ffafa893223a9c5599ff02fc5da43ed75d6",
+        "terraform/service/terraform.tfvars.example": "b084c58824699d03b758616a146ca871e082c9d7cc055ab7f70a0782d4556c16",
+        "terraform/service/terraform.tfvars.json": "f1c3fbd824e9bc29f1a97eb7c6d505010af4600b0f606eb935692a9b10fb247a",
+        "terraform/service/variables.tf": "35fc7150b91a801dcd7e1280a419ebaf8e7e6b31e20bba293d4d28f5affd4be4",
+        "terraform/service/versions.tf": "8c2da4ed241576193e080a2f736a60a35d0e8062f107274f63326f6b5afa87a6"
+      },
+      "image_id": "sha256:3bcfb78df19a983fdd12603d97a5c867dd3b6e77b8b5bffb90f32cc1df30d55e",
+      "conditions_fingerprint": "55a3b36e4d4db98dbd6010839c11bc3f7a66f679055b4c32bd03f584f4f0523b",
+      "service_tfvars": {
+        "project_name": "spring-http",
+        "aws_region": "ap-northeast-2",
+        "preset": "medium",
+        "container_port": 8080,
+        "health_path": "/health",
+        "expected_status_code": 200,
+        "environment": {},
+        "container_user": "1002:1000",
+        "exposure_mode": "https_existing_certificate",
+        "create_execution_role": true
+      },
+      "manifest_and_reviewed_hcl": "PASS",
+      "steps": [
+        {
+          "root": "registry",
+          "command": [
+            "terraform",
+            "fmt",
+            "-check"
+          ],
+          "recorded_at": "2026-09-30T01:34:38.835798+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 0.055,
+          "output": ""
+        },
+        {
+          "root": "registry",
+          "command": [
+            "terraform",
+            "init",
+            "-backend=false",
+            "-input=false",
+            "-no-color"
+          ],
+          "recorded_at": "2026-09-30T01:34:39.997027+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 1.161,
+          "output": "Initializing provider plugins...\n- Finding hashicorp/aws versions matching \"6.14.0\"...\n- Installing hashicorp/aws v6.14.0...\n- Installed hashicorp/aws v6.14.0 (unauthenticated)\nTerraform has created a lock file .terraform.lock.hcl to record the provider\nselections it made above. Include this file in your version control repository\nso that Terraform can guarantee to make the same selections by default when\nyou run \"terraform init\" in the future.\n\n\nWarning: Incomplete lock file information for providers\n\nDue to your customized provider installation methods, Terraform was forced to\ncalculate lock file checksums locally for the following providers:\n  - hashicorp/aws\n\nThe current .terraform.lock.hcl file only includes checksums for\nwindows_amd64, so Terraform running on another platform will fail to install\nthese providers.\n\nTo calculate additional checksums for another platform, run:\n  terraform providers lock -platform=linux_amd64\n(where linux_amd64 is the platform to generate)\nTerraform has been successfully initialized!\n"
+        },
+        {
+          "root": "registry",
+          "command": [
+            "terraform",
+            "validate",
+            "-no-color"
+          ],
+          "recorded_at": "2026-09-30T01:34:45.736281+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 5.739,
+          "output": "Success! The configuration is valid.\n\n"
+        },
+        {
+          "root": "service",
+          "command": [
+            "terraform",
+            "fmt",
+            "-check"
+          ],
+          "recorded_at": "2026-09-30T01:34:45.791101+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 0.054,
+          "output": ""
+        },
+        {
+          "root": "service",
+          "command": [
+            "terraform",
+            "init",
+            "-backend=false",
+            "-input=false",
+            "-no-color"
+          ],
+          "recorded_at": "2026-09-30T01:34:46.901495+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 1.11,
+          "output": "Initializing provider plugins...\n- Finding hashicorp/aws versions matching \"6.14.0\"...\n- Installing hashicorp/aws v6.14.0...\n- Installed hashicorp/aws v6.14.0 (unauthenticated)\nTerraform has created a lock file .terraform.lock.hcl to record the provider\nselections it made above. Include this file in your version control repository\nso that Terraform can guarantee to make the same selections by default when\nyou run \"terraform init\" in the future.\n\n\nWarning: Incomplete lock file information for providers\n\nDue to your customized provider installation methods, Terraform was forced to\ncalculate lock file checksums locally for the following providers:\n  - hashicorp/aws\n\nThe current .terraform.lock.hcl file only includes checksums for\nwindows_amd64, so Terraform running on another platform will fail to install\nthese providers.\n\nTo calculate additional checksums for another platform, run:\n  terraform providers lock -platform=linux_amd64\n(where linux_amd64 is the platform to generate)\nTerraform has been successfully initialized!\n"
+        },
+        {
+          "root": "service",
+          "command": [
+            "terraform",
+            "validate",
+            "-no-color"
+          ],
+          "recorded_at": "2026-09-30T01:34:52.639678+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 5.738,
+          "output": "Success! The configuration is valid.\n\n"
+        }
+      ],
+      "source_zip_sha256_after": "af5caac58afae2e623721dbc7daf32ffb25aef3517b8b8a9110a66829e3b5c49",
+      "original_zip_unchanged": true,
+      "extracted_original_files_unchanged": true
+    },
+    {
+      "label": "python-medium",
+      "source_zip": "exports/docker-http-f8cffc9a37c44d51aee1ea4c035dfe88-140fb808.zip",
+      "source_zip_sha256_before": "7475b6f0ecd46cc9d266e61bc1af25ff1c047203f179a209c0f39e0b9745abce",
+      "extracted_directory": ".work/bundle-validation/e5c37647eb8c4840a503b9280d5e3e60/python-medium",
+      "manifest_sha256": "67d01b2a9429f89ae529c2842eeef8a5a040b71c95fcf50c52b27f6cce8d43ec",
+      "original_files_sha256": {
+        "AWS_SPEC.md": "cc572a4912fd84ee97b6faa529127be88b47a8e65982e096484f07d8cfbb6969",
+        "AWS_VERIFICATION_RECORD.md": "cf332b88b13579a2f0d0c0bc1282c887e45aac86e3466a6353daec18ea3940fc",
+        "deployment-spec.json": "18612a371434f5ddd5f9d5df4d0a8e98e1bbcea8cf34fece8b7c586d87158b00",
+        "local-test-result.json": "7cac0121efea15cf5b2e07036017011e4425953c3dbff0c58d2586f0f02335bb",
+        "LOCAL_TEST_RESULT.md": "5859b161a3637058b39eb84f24c5eb4a6747fb545263cb0dc2522d1c7d8443bf",
+        "manifest.json": "67d01b2a9429f89ae529c2842eeef8a5a040b71c95fcf50c52b27f6cce8d43ec",
+        "MANUAL_AWS_RUNBOOK.md": "c4513ac6603876d783bd03c5d7896a8515dcb2df4b7581e5f9ab35a0e7c902ff",
+        "README_FIRST.md": "73e85fa2d5f1db7662af22f54e9147cc037597cbb2c901ab79cf0d8f8e99491d",
+        "REQUIRED_INPUTS.md": "80d237b39c22d334a578f04a195aa909033a57b69e821b22c4114f3ef6bbd4ba",
+        "image/image.json": "fbaaa75a47279003e9f1d1055d3651566a65cca39337772665506d0739df60a4",
+        "terraform/registry/main.tf": "d9fe46331e5103f8c3745bbd47e9438099fdd57ca0b28b6a65a0eb1a17097978",
+        "terraform/registry/outputs.tf": "84d57c124108a80180e0d54351359a5715945eac05c8465396307be397958221",
+        "terraform/registry/terraform.tfvars.example": "b2fc3b1dff9d22a7c04772f7e83bfaad70422cf5a4a5e978e4dc483a7013ab13",
+        "terraform/registry/terraform.tfvars.json": "7b89b30f724b6c54ad6aac979f2ceca88c854af20a54b7f07e45ea74764148ea",
+        "terraform/registry/variables.tf": "aed6a9a15dde8fe0e547bb18f6f4deb27baab282ea29cc30d42681aa0978d8ba",
+        "terraform/registry/versions.tf": "8c2da4ed241576193e080a2f736a60a35d0e8062f107274f63326f6b5afa87a6",
+        "terraform/service/main.tf": "49de83cbad1f3912ceb7e6e56c17dd45fe24cc8cbb010c2a0168f91f2257aa8c",
+        "terraform/service/outputs.tf": "04ec7c40cf22f837db73aa0b693f085fb99fd70eac0d811b5d4c7d84bd6f14e5",
+        "terraform/service/presets.json": "e57d8e157c453ccfb25860baa39f2ffafa893223a9c5599ff02fc5da43ed75d6",
+        "terraform/service/terraform.tfvars.example": "b084c58824699d03b758616a146ca871e082c9d7cc055ab7f70a0782d4556c16",
+        "terraform/service/terraform.tfvars.json": "4862aaa7363d4412583d562dd5fe3a8c77219ca6b49999fb5f3666c2b4b8e196",
+        "terraform/service/variables.tf": "35fc7150b91a801dcd7e1280a419ebaf8e7e6b31e20bba293d4d28f5affd4be4",
+        "terraform/service/versions.tf": "8c2da4ed241576193e080a2f736a60a35d0e8062f107274f63326f6b5afa87a6"
+      },
+      "image_id": "sha256:bfe62b4dc83c6a3d7b81ddd0c2a7e21fc488f8cd436e68bcec8c20b9cf2714b9",
+      "conditions_fingerprint": "6225e33beeb35a688c32bf397b06ac415e3dcfa6b24df091b78e42a7dff0f7b3",
+      "service_tfvars": {
+        "project_name": "docker-http",
+        "aws_region": "ap-northeast-2",
+        "preset": "medium",
+        "container_port": 8080,
+        "health_path": "/health",
+        "expected_status_code": 200,
+        "environment": {},
+        "container_user": "10001:10001",
+        "exposure_mode": "https_existing_certificate",
+        "create_execution_role": true
+      },
+      "manifest_and_reviewed_hcl": "PASS",
+      "steps": [
+        {
+          "root": "registry",
+          "command": [
+            "terraform",
+            "fmt",
+            "-check"
+          ],
+          "recorded_at": "2026-09-30T01:34:52.790746+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 0.054,
+          "output": ""
+        },
+        {
+          "root": "registry",
+          "command": [
+            "terraform",
+            "init",
+            "-backend=false",
+            "-input=false",
+            "-no-color"
+          ],
+          "recorded_at": "2026-09-30T01:34:53.950940+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 1.16,
+          "output": "Initializing provider plugins...\n- Finding hashicorp/aws versions matching \"6.14.0\"...\n- Installing hashicorp/aws v6.14.0...\n- Installed hashicorp/aws v6.14.0 (unauthenticated)\nTerraform has created a lock file .terraform.lock.hcl to record the provider\nselections it made above. Include this file in your version control repository\nso that Terraform can guarantee to make the same selections by default when\nyou run \"terraform init\" in the future.\n\n\nWarning: Incomplete lock file information for providers\n\nDue to your customized provider installation methods, Terraform was forced to\ncalculate lock file checksums locally for the following providers:\n  - hashicorp/aws\n\nThe current .terraform.lock.hcl file only includes checksums for\nwindows_amd64, so Terraform running on another platform will fail to install\nthese providers.\n\nTo calculate additional checksums for another platform, run:\n  terraform providers lock -platform=linux_amd64\n(where linux_amd64 is the platform to generate)\nTerraform has been successfully initialized!\n"
+        },
+        {
+          "root": "registry",
+          "command": [
+            "terraform",
+            "validate",
+            "-no-color"
+          ],
+          "recorded_at": "2026-09-30T01:34:59.643598+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 5.692,
+          "output": "Success! The configuration is valid.\n\n"
+        },
+        {
+          "root": "service",
+          "command": [
+            "terraform",
+            "fmt",
+            "-check"
+          ],
+          "recorded_at": "2026-09-30T01:34:59.698421+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 0.054,
+          "output": ""
+        },
+        {
+          "root": "service",
+          "command": [
+            "terraform",
+            "init",
+            "-backend=false",
+            "-input=false",
+            "-no-color"
+          ],
+          "recorded_at": "2026-09-30T01:35:00.809415+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 1.11,
+          "output": "Initializing provider plugins...\n- Finding hashicorp/aws versions matching \"6.14.0\"...\n- Installing hashicorp/aws v6.14.0...\n- Installed hashicorp/aws v6.14.0 (unauthenticated)\nTerraform has created a lock file .terraform.lock.hcl to record the provider\nselections it made above. Include this file in your version control repository\nso that Terraform can guarantee to make the same selections by default when\nyou run \"terraform init\" in the future.\n\n\nWarning: Incomplete lock file information for providers\n\nDue to your customized provider installation methods, Terraform was forced to\ncalculate lock file checksums locally for the following providers:\n  - hashicorp/aws\n\nThe current .terraform.lock.hcl file only includes checksums for\nwindows_amd64, so Terraform running on another platform will fail to install\nthese providers.\n\nTo calculate additional checksums for another platform, run:\n  terraform providers lock -platform=linux_amd64\n(where linux_amd64 is the platform to generate)\nTerraform has been successfully initialized!\n"
+        },
+        {
+          "root": "service",
+          "command": [
+            "terraform",
+            "validate",
+            "-no-color"
+          ],
+          "recorded_at": "2026-09-30T01:35:06.549956+00:00",
+          "status": "PASS",
+          "returncode": 0,
+          "timed_out": false,
+          "cancelled": false,
+          "elapsed_seconds": 5.74,
+          "output": "Success! The configuration is valid.\n\n"
+        }
+      ],
+      "source_zip_sha256_after": "7475b6f0ecd46cc9d266e61bc1af25ff1c047203f179a209c0f39e0b9745abce",
+      "original_zip_unchanged": true,
+      "extracted_original_files_unchanged": true
+    }
+  ],
+  "terraform_version": "1.14.8",
+  "finished_at": "2026-09-30T01:35:06.553522+00:00",
+  "status": "PASS"
+}

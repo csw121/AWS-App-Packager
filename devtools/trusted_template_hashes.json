@@ -1,0 +1,13 @@
+{
+  "registry/main.tf": "d9fe46331e5103f8c3745bbd47e9438099fdd57ca0b28b6a65a0eb1a17097978",
+  "registry/outputs.tf": "84d57c124108a80180e0d54351359a5715945eac05c8465396307be397958221",
+  "registry/tests/registry.tftest.hcl": "7a75a83c125b2db6f7f0df76c254ca16213aa11f975ec6235a3a17937f3ae620",
+  "registry/variables.tf": "aed6a9a15dde8fe0e547bb18f6f4deb27baab282ea29cc30d42681aa0978d8ba",
+  "registry/versions.tf": "8c2da4ed241576193e080a2f736a60a35d0e8062f107274f63326f6b5afa87a6",
+  "service/main.tf": "49de83cbad1f3912ceb7e6e56c17dd45fe24cc8cbb010c2a0168f91f2257aa8c",
+  "service/outputs.tf": "04ec7c40cf22f837db73aa0b693f085fb99fd70eac0d811b5d4c7d84bd6f14e5",
+  "service/tests/service.tftest.hcl": "4ef19f57d05e06807e0ff2d12ce4a66c01ac747f9d70a2afa369091288e18352",
+  "service/variables.tf": "35fc7150b91a801dcd7e1280a419ebaf8e7e6b31e20bba293d4d28f5affd4be4",
+  "service/versions.tf": "8c2da4ed241576193e080a2f736a60a35d0e8062f107274f63326f6b5afa87a6",
+  "service/presets.json": "f5c57d34fe78ba41a96612f7ef9202ac47edd71eaa903b6eb12bf0e85e3e4c8b"
+}

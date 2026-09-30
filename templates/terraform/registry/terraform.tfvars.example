@@ -1,0 +1,3 @@
+# Documentation example only; check the account, region and new repository name.
+aws_region      = "ap-northeast-2"
+repository_name = "replace-with-new-repository"

@@ -1,0 +1,8 @@
+FROM python:3.13.2-slim-bookworm@sha256:0b3498e251759df85a00474be7d3b791d6abe1600ce3531a649e42964749655f
+WORKDIR /app
+COPY server.py /app/server.py
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+USER 10001:10001
+VOLUME ["/tmp"]
+EXPOSE 8080
+CMD ["python", "/app/server.py"]

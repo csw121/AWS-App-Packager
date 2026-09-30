@@ -1,0 +1,366 @@
+{
+  "kind": "REAL_UI_WORKFLOW_INTEGRATION",
+  "started_at": "2026-09-30T05:43:01.801861+00:00",
+  "entrypoint": "aws_app_packager.service.start_build",
+  "workflow": "same JobManager worker, snapshot, approval, build and runtime as UI button",
+  "mocked": false,
+  "build_action": "FRESH_BUILD",
+  "aws_status": "AWS_NOT_TESTED",
+  "terraform_status": "NOT_RUN",
+  "samples": [
+    {
+      "sample": "spring-http",
+      "source_fingerprint": "a9cb1472a3d1effe51ddd6a0bc72bb7aacc4d6ef32f287c171e27c07e084fa86",
+      "conditions": {
+        "preset": "medium",
+        "container_port": 8080,
+        "health_path": "/health",
+        "environment": {},
+        "expected_status": 200,
+        "expected_marker": "packager-spring-v1",
+        "timeout_seconds": 90,
+        "restart": true,
+        "network_mode": "approved_project_bridge"
+      },
+      "started_at": "2026-09-30T05:43:02.141600+00:00",
+      "status": "PASS",
+      "execution_job_id": "b10060d30f7a4e3d8b65670e7cf8086c",
+      "finished_at": "2026-09-30T05:49:55.969225+00:00",
+      "job_status": "DONE",
+      "outcome": "PASS",
+      "workflow_display": {
+        "outcome": "PASS",
+        "image_id": "sha256:62a758719af208b29138edfbe935fc6212f5d4e7865c654dc2500f68892db9e6",
+        "rows": [
+          {
+            "key": "image_build",
+            "label": "이미지 만들기",
+            "status": "PASS"
+          },
+          {
+            "key": "container_start",
+            "label": "컨테이너 시작",
+            "status": "PASS"
+          },
+          {
+            "key": "port_mapping",
+            "label": "로컬 포트 연결",
+            "status": "PASS"
+          },
+          {
+            "key": "initial_http",
+            "label": "최초 HTTP 시험",
+            "status": "PASS"
+          },
+          {
+            "key": "restart",
+            "label": "컨테이너 재시작",
+            "status": "PASS"
+          },
+          {
+            "key": "restart_port_mapping",
+            "label": "재시작 후 포트 연결",
+            "status": "PASS"
+          },
+          {
+            "key": "restart_http",
+            "label": "재시작 후 HTTP 시험",
+            "status": "PASS"
+          },
+          {
+            "key": "cleanup",
+            "label": "시험 자원 정리",
+            "status": "PASS"
+          }
+        ]
+      },
+      "job_record": ".work/jobs/b10060d30f7a4e3d8b65670e7cf8086c.json",
+      "error": null,
+      "artifact": {
+        "job_id": "b10060d30f7a4e3d8b65670e7cf8086c",
+        "project_label": "spring-http",
+        "build_method": "paketo_java",
+        "source_fingerprint": "a9cb1472a3d1effe51ddd6a0bc72bb7aacc4d6ef32f287c171e27c07e084fa86",
+        "local_tag": "aws-app-packager/spring-http:b10060d30f7a4e3d8b65670e7cf8086c",
+        "image_id": "sha256:62a758719af208b29138edfbe935fc6212f5d4e7865c654dc2500f68892db9e6",
+        "os": "linux",
+        "architecture": "amd64",
+        "created_at": "2026-09-30T05:49:46.003941+00:00",
+        "size_bytes": 666126296,
+        "user": "1002:1000",
+        "builder_info": "paketobuildpacks/builder-jammy-base:0.4.579@sha256:c696f4078229f82f7e3faf9fd806554f897dcdc09686c9fee3edd0ff914560ff | paketo_tmp_volume_v1",
+        "tool_versions": {
+          "docker": "29.8.1",
+          "pack": "0.40.9+git-8210eb1.build-6996"
+        },
+        "manifest_path": "D:\\AWS App Packager\\.work\\jobs\\b10060d30f7a4e3d8b65670e7cf8086c\\build-context-manifest.json",
+        "status": "BUILT"
+      },
+      "check": {
+        "job_id": "b10060d30f7a4e3d8b65670e7cf8086c",
+        "execution_job_id": "b10060d30f7a4e3d8b65670e7cf8086c",
+        "image_id": "sha256:62a758719af208b29138edfbe935fc6212f5d4e7865c654dc2500f68892db9e6",
+        "source_fingerprint": "a9cb1472a3d1effe51ddd6a0bc72bb7aacc4d6ef32f287c171e27c07e084fa86",
+        "conditions": {
+          "preset": "medium",
+          "container_port": 8080,
+          "health_path": "/health",
+          "environment": {},
+          "expected_status": 200,
+          "expected_marker": "packager-spring-v1",
+          "timeout_seconds": 90,
+          "restart": true,
+          "network_mode": "approved_project_bridge"
+        },
+        "conditions_fingerprint": "2137bbe854ce669e18d5b14c9d5f65818044209a29fac88ba037e3f9689e8021",
+        "status": "PASS",
+        "outcome": "PASS",
+        "started_at": "2026-09-30T05:49:46.006211+00:00",
+        "finished_at": "2026-09-30T05:49:55.966767+00:00",
+        "http_status": 200,
+        "initial_http_status": 200,
+        "initial_http_passed": true,
+        "restart_http_status": 200,
+        "image_verified": true,
+        "container_started": true,
+        "restart_performed": true,
+        "host_port": 25000,
+        "network_driver": "bridge",
+        "network_internal": false,
+        "port_evidence": [
+          {
+            "phase": "start",
+            "recorded_at": "2026-09-30T05:49:47.402566+00:00",
+            "inspect_output": "{\"8080/tcp\":[{\"HostIp\":\"127.0.0.1\",\"HostPort\":\"24992\"}]}\n",
+            "inspect_returncode": 0,
+            "docker_port_output": "127.0.0.1:24992\n",
+            "docker_port_returncode": 0,
+            "host_port": 24992,
+            "verified": true
+          },
+          {
+            "phase": "restart",
+            "recorded_at": "2026-09-30T05:49:51.445789+00:00",
+            "inspect_output": "{\"8080/tcp\":[{\"HostIp\":\"127.0.0.1\",\"HostPort\":\"25000\"}]}\n",
+            "inspect_returncode": 0,
+            "docker_port_output": "127.0.0.1:25000\n",
+            "docker_port_returncode": 0,
+            "host_port": 25000,
+            "verified": true
+          }
+        ],
+        "failure_layer": null,
+        "restart_passed": true,
+        "message": "지정 경로의 HTTP 응답 시험을 통과했습니다.",
+        "logs": "\n                            (stack: reserved=12582912, committed=905216, peak=905216)\n                            (malloc=28448 #83) (peak=74368 #189) \n                            (arena=13632 #24) (peak=339712 #22)\n \n-                      Code (reserved=254559952, committed=13149904)\n                            (malloc=926456 #5132) (at peak) \n                            (mmap: reserved=253632512, committed=12222464, at peak) \n                            (arena=984 #1) (peak=33712 #1)\n \n-                        GC (reserved=5049514, committed=138410)\n                            (malloc=23722 #80) (peak=120626 #106) \n                            (mmap: reserved=5025792, committed=114688, at peak) \n \n-                  Compiler (reserved=2900192, committed=2900192)\n                            (malloc=32768 #366) (peak=61248 #376) \n                            (arena=2867424 #13) (peak=22726928 #13)\n \n-                  Internal (reserved=290073, committed=290073)\n                            (malloc=253209 #4995) (peak=273730 #5090) \n                            (mmap: reserved=36864, committed=36864, at peak) \n \n-                     Other (reserved=0, committed=0)\n                            (malloc=0) (peak=22528 #3) \n \n-                    Symbol (reserved=11095560, committed=11095560)\n                            (malloc=9777808 #86658) (at peak) \n                            (arena=1317752 #1) (at peak)\n \n-    Native Memory Tracking (reserved=1978816, committed=1978816)\n                            (malloc=34288 #598) (peak=36712 #631) \n                            (tracking overhead=1944528)\n \n-        Shared class space (reserved=16777216, committed=12247040, readonly=0)\n                            (mmap: reserved=16777216, committed=12247040, peak=12484608) \n \n-               Arena Chunk (reserved=13021632, committed=13021632)\n                            (malloc=13021632 #574) (peak=23377072 #570) \n \n-                   Tracing (reserved=257, committed=257)\n                            (malloc=257 #5) (at peak) \n \n-                Statistics (reserved=128, committed=128)\n                            (malloc=128 #2) (at peak) \n \n-                 Arguments (reserved=165, committed=165)\n                            (malloc=165 #5) (at peak) \n \n-                    Module (reserved=66152, committed=66152)\n                            (malloc=66152 #1668) (at peak) \n \n-                 Safepoint (reserved=8192, committed=8192)\n                            (mmap: reserved=8192, committed=8192, at peak) \n \n-           Synchronization (reserved=49368, committed=49368)\n                            (malloc=49368 #464) (peak=50928 #479) \n \n-            Serviceability (reserved=17152, committed=17152)\n                            (malloc=17152 #9) (peak=17296 #11) \n \n-                 Metaspace (reserved=67273680, committed=27821008)\n                            (malloc=164816 #105) (at peak) \n                            (mmap: reserved=67108864, committed=27656192, at peak) \n \n-      String Deduplication (reserved=680, committed=680)\n                            (malloc=680 #8) (at peak) \n \n-           Object Monitors (reserved=1872, committed=1872)\n                            (malloc=1872 #9) (at peak) \n \n-                   Unknown (reserved=0, committed=0)\n                            (mmap: reserved=0, committed=0, peak=20480) \n \nCalculated JVM Memory Configuration: -XX:MaxDirectMemorySize=10M -Xmx1504882K -XX:MaxMetaspaceSize=80269K -XX:ReservedCodeCacheSize=240M -Xss1M (Total Memory: 2G, Thread Count: 250, Loaded Class Count: 11758, Headroom: 0%)\nEnabling Java Native Memory Tracking\nUsing readonly truststore: /tmp/truststore\nAdding 146 container CA certificates to JVM truststore\nSpring Cloud Bindings Enabled\nPicked up JAVA_TOOL_OPTIONS: -Djava.security.properties=/layers/paketo-buildpacks_bellsoft-liberica/java-security-properties/java-security.properties -XX:+ExitOnOutOfMemoryError -XX:MaxDirectMemorySize=10M -Xmx1504882K -XX:MaxMetaspaceSize=80269K -XX:ReservedCodeCacheSize=240M -Xss1M -XX:+UnlockDiagnosticVMOptions -XX:NativeMemoryTracking=summary -XX:+PrintNMTStatistics -Djavax.net.ssl.trustStore=/tmp/truststore -Dorg.springframework.cloud.bindings.boot.enable=true\n\n  .   ____          _            __ _ _\n /\\\\ / ___'_ __ _ _(_)_ __  __ _ \\ \\ \\ \\\n( ( )\\___ | '_ | '_| | '_ \\/ _` | \\ \\ \\ \\\n \\\\/  ___)| |_)| | | | | || (_| |  ) ) ) )\n  '  |____| .__|_| |_|_| |_\\__, | / / / /\n =========|_|==============|___/=/_/_/_/\n\n :: Spring Boot ::                (v3.5.6)\n\n2026-09-30T05:49:52.258Z  INFO 1 --- [packager-spring-sample] [           main] example.packager.Application             : Starting Application v0.1.0 using Java 21.0.11 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)\n2026-09-30T05:49:52.299Z  INFO 1 --- [packager-spring-sample] [           main] example.packager.Application             : No active profile set, falling back to 1 default profile: \"default\"\n2026-09-30T05:49:53.639Z  INFO 1 --- [packager-spring-sample] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)\n2026-09-30T05:49:53.706Z  INFO 1 --- [packager-spring-sample] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]\n2026-09-30T05:49:53.706Z  INFO 1 --- [packager-spring-sample] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]\n2026-09-30T05:49:53.833Z  INFO 1 --- [packager-spring-sample] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext\n2026-09-30T05:49:53.834Z  INFO 1 --- [packager-spring-sample] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1501 ms\n2026-09-30T05:49:54.613Z  INFO 1 --- [packager-spring-sample] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'\n2026-09-30T05:49:54.622Z  INFO 1 --- [packager-spring-sample] [           main] example.packager.Application             : Started Application in 2.88 seconds (process running for 3.267)\n2026-09-30T05:49:54.715Z  INFO 1 --- [packager-spring-sample] [0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'\n2026-09-30T05:49:54.715Z  INFO 1 --- [packager-spring-sample] [0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'\n2026-09-30T05:49:54.716Z  INFO 1 --- [packager-spring-sample] [0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms\n",
+        "cleanup_status": "CLEANED",
+        "environment": "local Docker, Linux/amd64; explicitly approved project normal bridge (outbound allowed); 127.0.0.1-only published HTTP",
+        "limitations": [
+          "업무 기능·데이터 보존·AWS 실제 동작 미검증"
+        ]
+      },
+      "cleanup_verification": {
+        "status": "CLEANED",
+        "checks": [
+          {
+            "kind": "container",
+            "id": "05823f099d79985bdbcaf4d7449aec566d7b2d274a294a0fc0f5ba562b63ca86",
+            "absent": true,
+            "returncode": 1,
+            "output": "\nError response from daemon: No such container: 05823f099d79985bdbcaf4d7449aec566d7b2d274a294a0fc0f5ba562b63ca86\n"
+          },
+          {
+            "kind": "network",
+            "id": "de63e72d87ec1d94770e6ccd0c6b7e7b1840e1799bc1159959fc2f2a2098262c",
+            "absent": true,
+            "returncode": 1,
+            "output": "\nError response from daemon: network de63e72d87ec1d94770e6ccd0c6b7e7b1840e1799bc1159959fc2f2a2098262c not found\n"
+          }
+        ]
+      }
+    },
+    {
+      "sample": "docker-http",
+      "source_fingerprint": "5f096cd73c93fbe0db3830dce21979a50b37c088e15285656de24c95e818a0e2",
+      "conditions": {
+        "preset": "medium",
+        "container_port": 8080,
+        "health_path": "/health",
+        "environment": {},
+        "expected_status": 200,
+        "expected_marker": "packager-python-v1",
+        "timeout_seconds": 90,
+        "restart": true,
+        "network_mode": "approved_project_bridge"
+      },
+      "started_at": "2026-09-30T05:49:56.091438+00:00",
+      "status": "PASS",
+      "execution_job_id": "c0af864b6539493c94b3ff1702721ad0",
+      "finished_at": "2026-09-30T05:50:06.914841+00:00",
+      "job_status": "DONE",
+      "outcome": "PASS",
+      "workflow_display": {
+        "outcome": "PASS",
+        "image_id": "sha256:a67dc6caab9cbac799e3d980ad37db2c3ebce1e3bd6ba08e07f52467c05a1392",
+        "rows": [
+          {
+            "key": "image_build",
+            "label": "이미지 만들기",
+            "status": "PASS"
+          },
+          {
+            "key": "container_start",
+            "label": "컨테이너 시작",
+            "status": "PASS"
+          },
+          {
+            "key": "port_mapping",
+            "label": "로컬 포트 연결",
+            "status": "PASS"
+          },
+          {
+            "key": "initial_http",
+            "label": "최초 HTTP 시험",
+            "status": "PASS"
+          },
+          {
+            "key": "restart",
+            "label": "컨테이너 재시작",
+            "status": "PASS"
+          },
+          {
+            "key": "restart_port_mapping",
+            "label": "재시작 후 포트 연결",
+            "status": "PASS"
+          },
+          {
+            "key": "restart_http",
+            "label": "재시작 후 HTTP 시험",
+            "status": "PASS"
+          },
+          {
+            "key": "cleanup",
+            "label": "시험 자원 정리",
+            "status": "PASS"
+          }
+        ]
+      },
+      "job_record": ".work/jobs/c0af864b6539493c94b3ff1702721ad0.json",
+      "error": null,
+      "artifact": {
+        "job_id": "c0af864b6539493c94b3ff1702721ad0",
+        "project_label": "docker-http",
+        "build_method": "dockerfile",
+        "source_fingerprint": "5f096cd73c93fbe0db3830dce21979a50b37c088e15285656de24c95e818a0e2",
+        "local_tag": "aws-app-packager/docker-http:c0af864b6539493c94b3ff1702721ad0",
+        "image_id": "sha256:a67dc6caab9cbac799e3d980ad37db2c3ebce1e3bd6ba08e07f52467c05a1392",
+        "os": "linux",
+        "architecture": "amd64",
+        "created_at": "2026-09-30T05:49:58.749881+00:00",
+        "size_bytes": 181285551,
+        "user": "10001:10001",
+        "builder_info": "approved Dockerfile snapshot",
+        "tool_versions": {
+          "docker": "29.8.1",
+          "pack": "0.40.9+git-8210eb1.build-6996"
+        },
+        "manifest_path": "D:\\AWS App Packager\\.work\\jobs\\c0af864b6539493c94b3ff1702721ad0\\build-context-manifest.json",
+        "status": "BUILT"
+      },
+      "check": {
+        "job_id": "c0af864b6539493c94b3ff1702721ad0",
+        "execution_job_id": "c0af864b6539493c94b3ff1702721ad0",
+        "image_id": "sha256:a67dc6caab9cbac799e3d980ad37db2c3ebce1e3bd6ba08e07f52467c05a1392",
+        "source_fingerprint": "5f096cd73c93fbe0db3830dce21979a50b37c088e15285656de24c95e818a0e2",
+        "conditions": {
+          "preset": "medium",
+          "container_port": 8080,
+          "health_path": "/health",
+          "environment": {},
+          "expected_status": 200,
+          "expected_marker": "packager-python-v1",
+          "timeout_seconds": 90,
+          "restart": true,
+          "network_mode": "approved_project_bridge"
+        },
+        "conditions_fingerprint": "dbd0ba2b61468d475af399f0b8a35f29a7ee156326a7695f51734f956fb50555",
+        "status": "PASS",
+        "outcome": "PASS",
+        "started_at": "2026-09-30T05:49:58.752136+00:00",
+        "finished_at": "2026-09-30T05:50:06.912712+00:00",
+        "http_status": 200,
+        "initial_http_status": 200,
+        "initial_http_passed": true,
+        "restart_http_status": 200,
+        "image_verified": true,
+        "container_started": true,
+        "restart_performed": true,
+        "host_port": 30932,
+        "network_driver": "bridge",
+        "network_internal": false,
+        "port_evidence": [
+          {
+            "phase": "start",
+            "recorded_at": "2026-09-30T05:49:59.998855+00:00",
+            "inspect_output": "{\"8080/tcp\":[{\"HostIp\":\"127.0.0.1\",\"HostPort\":\"30924\"}]}\n",
+            "inspect_returncode": 0,
+            "docker_port_output": "127.0.0.1:30924\n",
+            "docker_port_returncode": 0,
+            "host_port": 30924,
+            "verified": true
+          },
+          {
+            "phase": "restart",
+            "recorded_at": "2026-09-30T05:50:05.760289+00:00",
+            "inspect_output": "{\"8080/tcp\":[{\"HostIp\":\"127.0.0.1\",\"HostPort\":\"30932\"}]}\n",
+            "inspect_returncode": 0,
+            "docker_port_output": "127.0.0.1:30932\n",
+            "docker_port_returncode": 0,
+            "host_port": 30932,
+            "verified": true
+          }
+        ],
+        "failure_layer": null,
+        "restart_passed": true,
+        "message": "지정 경로의 HTTP 응답 시험을 통과했습니다.",
+        "logs": "\n",
+        "cleanup_status": "CLEANED",
+        "environment": "local Docker, Linux/amd64; explicitly approved project normal bridge (outbound allowed); 127.0.0.1-only published HTTP",
+        "limitations": [
+          "업무 기능·데이터 보존·AWS 실제 동작 미검증"
+        ]
+      },
+      "cleanup_verification": {
+        "status": "CLEANED",
+        "checks": [
+          {
+            "kind": "container",
+            "id": "95448af78769338d8078230fad91f8c9d488d4177471f8c7534150472f86c729",
+            "absent": true,
+            "returncode": 1,
+            "output": "\nError response from daemon: No such container: 95448af78769338d8078230fad91f8c9d488d4177471f8c7534150472f86c729\n"
+          },
+          {
+            "kind": "network",
+            "id": "58fbad4b2eb4ec7646a044daa73925506ec996914b3f356c9127f374d1f31448",
+            "absent": true,
+            "returncode": 1,
+            "output": "\nError response from daemon: network 58fbad4b2eb4ec7646a044daa73925506ec996914b3f356c9127f374d1f31448 not found\n"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "PASS",
+  "environment": {
+    "docker_ready": true,
+    "docker_version": "29.8.1",
+    "docker_os": "linux",
+    "docker_architecture": "amd64",
+    "pack_ready": true,
+    "pack_version": "0.40.9+git-8210eb1.build-6996",
+    "endpoint": "npipe:////./pipe/dockerDesktopLinuxEngine",
+    "blockers": []
+  },
+  "finished_at": "2026-09-30T05:50:07.030947+00:00"
+}
